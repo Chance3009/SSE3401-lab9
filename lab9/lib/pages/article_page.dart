@@ -182,7 +182,7 @@ class _ArticlePageState extends State<ArticlePage> {
                                     image: DecorationImage(
                                       fit: BoxFit.fill,
                                       image: NetworkImage(
-                                          "http://10.0.2.2:8000/uploads/" +
+                                          "http://35.223.140.179:8000/uploads/" +
                                               articles[i].img),
                                     ),
                                   ),
@@ -262,7 +262,8 @@ class _ArticlePageState extends State<ArticlePage> {
                                 context,
                                 MaterialPageRoute(
                                     builder: (context) => DetailBookPage(
-                                        articleInfo: allarticles[i], index: i)));
+                                        articleInfo: allarticles[i],
+                                        index: i)));
                           },
                           child: allarticles.length == 0
                               ? CircularProgressIndicator()
@@ -279,7 +280,7 @@ class _ArticlePageState extends State<ArticlePage> {
                                         clipBehavior:
                                             Clip.antiAliasWithSaveLayer,
                                         child: Image.network(
-                                          "http://10.0.2.2:8000/uploads/" +
+                                          "http://35.223.140.179:8000/uploads/" +
                                               allarticles[i].img.toString(),
                                           fit: BoxFit.contain,
                                         ),

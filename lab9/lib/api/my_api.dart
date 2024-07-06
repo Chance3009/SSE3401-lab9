@@ -4,8 +4,8 @@ import 'package:http/http.dart' as http;
 import 'package:shared_preferences/shared_preferences.dart';
 
 class CallApi {
-  final String _url = 'http://10.0.2.2:8000/api/';
-  final String _imgUrl = 'http://10.0.2.2:8000/uploads/';
+  final String _url = 'http://35.223.140.179:8000/api/';
+  final String _imgUrl = 'http://35.223.140.179:8000/uploads/';
   getImage() {
     return _imgUrl;
   }

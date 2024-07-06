@@ -83,7 +83,7 @@ class _WelcomePageState extends State<WelcomePage> {
             ),
             _buildRow([
               DotsIndicator(
-                dotsCount: _totalDots,
+                dotsCount: _totalDots > 0 ? _totalDots : 1,
                 position: _currentPosition.toInt(),
                 axis: Axis.horizontal,
                 decorator: DotsDecorator(
